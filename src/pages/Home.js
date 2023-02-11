@@ -1,9 +1,10 @@
 import React from 'react';
 //css-in-js style-components
 import styled from 'styled-components';
-import MainImg from '../asset/cat/main_cat.jpg';
+import MainImg from '../asset/cat/mainCat.jpg';
 import LogoImage from '../asset/cat/logo.png';
 import Bg from '../asset/background.jpeg'; 
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Home = () => {
   return (
@@ -11,12 +12,12 @@ const Home = () => {
         <Wrapper>
             <Header>예비집사 판별기.
               <Logo>
-              <img src={LogoImage} width={75} height={75}/>
+              <img src={LogoImage} width={75} height={75}  />
               </Logo>
             </Header>
-            <Title>나에게 맞는 고양이는?</Title>
+            <Title> 나에게 맞는 고양이는? </Title>
             <MainImage>
-              <img src={MainImg} width={350} height={350}/>
+              <img src={MainImg} width={350} height={350} className="rounded-circle"/>
             </MainImage>
         </Wrapper>
     </>
@@ -43,7 +44,6 @@ const Title = styled.div`
   align-items: center; 
 `
 const Logo = styled.div`
-
 `
 const MainImage = styled.div`
 

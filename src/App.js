@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Question from './pages/Question';
 import Result from './pages/Results'; 
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 function App() {
   return (
