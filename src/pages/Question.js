@@ -3,6 +3,7 @@ import { ProgressBar} from 'react-bootstrap';
 import styled from 'styled-components';
 import { QuestionData } from '../asset/data/QuestionData';
 import { createSearchParams, useNavigate } from 'react-router-dom';
+import ProgressBar from './'
 
 const Question = () => {
   const [questionNo, setQuestionNo] = React.useState(0);
@@ -45,7 +46,7 @@ const Question = () => {
   
   return (
     <Wrapper>
-      <ProgressBar striped variant="danger" now={(questionNo / QuestionData.length) * 100 } style={{ marginTop: '20px'}}/>
+      <ProgressBar striped variant="danger" now={(questionNo / QuestionData.length) * 100 } style={{backgroundColor:"transparent" }}/>
       <Title>{QuestionData[questionNo].title} </Title>
       <ButtonGroup>
         <Button onClick={()=>handleClickButton(1, QuestionData[questionNo].type)}> {QuestionData[questionNo].answera} </Button>
