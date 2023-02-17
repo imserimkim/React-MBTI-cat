@@ -3,7 +3,7 @@ import { ProgressBar} from 'react-bootstrap';
 import styled from 'styled-components';
 import { QuestionData } from '../asset/data/QuestionData';
 import { createSearchParams, useNavigate } from 'react-router-dom';
-import ProgressBar from './'
+
 
 const Question = () => {
   const [questionNo, setQuestionNo] = React.useState(0);
